@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoHub | Car Inquiry</title>
+    <style>
+        
+{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Segoe UI', Roboto, Arial, sans-serif;}
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: #f1f5f9;
+        }
+
+        header {
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+
+        .hero {
+            padding: 130px 20px 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 span {
+            color: #fbbf24;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.08);
+            height: fit-content;
+        }
+
+        .info-card h3 {
+            color: #fbbf24;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            margin-bottom: 20px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 16px;
+            padding: 35px;
+            color: #1e293b;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+
+        .form-card h2 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #0f172a;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 500px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 6px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 15px;
+            background: #fafafa;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus, select:focus,
+textarea:focus {
+            outline: none;
+            border-color: #f59e0b;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+        }
+
+        button {
+            width: 100%;
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.35);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🚗 AutoHub</div>
+</header>
+
+<section class="hero">
+    <h1>Find Your <span>Perfect Ride</span></h1>
+    <p>Send us your inquiry and we'll help you find the vehicle that fits your lifestyle and budget.</p>
+</section>
+
+<div class="container">
+    <div class="content-wrapper">
+        <!-- Left: Contact Info -->
+        <div class="info-card">
+            <h3>📍 Visit Our Showroom</h3>
+
+            <div class="info-item">
+                <strong>Address</strong>
+                <p>MacArthur Highway, Tarlac City<br>Tarlac, Philippines</p>
+            </div>
+
+            <div class="info-item">
+                <strong>Contact</strong>
+                <p>📞 (045) 123 4567<br>📧 info@autohub.ph</p>
+            </div>
+
+            <div class="info-item">
+                <strong>Business Hours</strong>
+                <p>🕐 Monday – Friday: 8AM – 6PM<br>🕐 Saturday: 9AM – 5PM<br>🕐 Sunday: By Appointment</p>
+            </div>
+
+            <div class="info-item">
+                <strong>Quick Response</strong>
+                <p>We reply within 24 hours during business days!</p>
+            </div>
+        </div>
+
+        <!-- Right: Inquiry Form -->
+        <div class="form-card">
+            <h2>📩 Send Us an Inquiry</h2>
+
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <div>
+                        <label for="firstname">First Name *</label>
+                        <input
+type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name </label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+63 9XX XXX XXXX">
+                    </div>
+                </div>
+
+                <label for="car-type">Vehicle Type</label>
+                <select id="car-type" name="car-type">
+                    <option value="">— Select Type —</option>
+                    <option>Sedan</option>
+                    <option>SUV / Crossover</option>
+                    <option>Hatchback</option>
+                    <option>MPV / Van</option>
+                    <option>Pickup Truck</option>
+                    <option>Electric / Hybrid</option>
+                    <option>Not sure yet</option>
+                </select>
+
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                    <option value="">— Select Budget —</option>
+                    <option>Under ₱600,000</option>
+                    <option>₱600,000 – ₱1 Million</option>
+                    <option>₱1 Million – ₱1.5 Million</option>
+                    <option>₱1.5 Million – ₱2.5 Million</option>
+                    <option>Over ₱2.5 Million</option>
+                </select>
+
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for — brand, features, or questions you have..." required></textarea>
+
+                <button type="submit">✉️ Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 AutoHub Tarlac City. All rights reserved.
+</footer>
+
+</body>
+</html>
